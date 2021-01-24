@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://kit.fontawesome.com/90de3835e0.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="manifest" type="application/manifest+json" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#FFFFFF"/>
+
+ <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>TodoList</title>
+  </head>
+  <body>
+
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+  <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+    </script>
+    <script>
+        $(document).ready(function(){
+        $('.modal').modal();
+  });
+    </script>
+  </body>
+</html>
