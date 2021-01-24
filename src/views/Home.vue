@@ -19,7 +19,7 @@
       </div>
         <div class="card-action">
             
-            <a class=" blue  btn-floating modal-trigger" href="#modal1" @click='test20([x.title,x.content])'>
+            <a class=" blue  btn-floating modal-trigger" href="#modal1" @click='test200([x.title,x.content])'>
               <i class="far fa-eye"></i></a>
           <!--<a href='#' class="blue btn-floating " v-on:click="test3([x.id,x.title,x.content])" >
             <i class="far fa-eye"></i>
@@ -131,7 +131,7 @@ export default {
       this.$router.push({ name : 'look', params: { info: c } })
 
     },
-    test20(x){
+    test200(x){
       this.testList = x;
     /*      var elems = document.querySelectorAll('.modal');
 
