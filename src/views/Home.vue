@@ -24,10 +24,10 @@
           <!--<a href='#' class="blue btn-floating " v-on:click="test3([x.id,x.title,x.content])" >
             <i class="far fa-eye"></i>
           </a>-->
-          <a href="#" class="btn-floating  test2 right waves-effect waves-light " v-on:click="test(x.id)">
+          <a href="#" class="btn-floating  test2 right " v-on:click="test(x.id)">
             <i class="far fa-check-circle"></i>
           </a>
-          <a href="#" class="btn-floating red test2 right waves-effect waves-light  " v-on:click="test2([x.id,x.title,x.content])">
+          <a href="#" class="btn-floating red test2 right  " v-on:click="test2([x.id,x.title,x.content])">
             <i class="far fa-edit"></i>
           </a>
         </div>
