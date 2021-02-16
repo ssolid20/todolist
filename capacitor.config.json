@@ -1,0 +1,17 @@
+{
+  "appId": "com.todolist.www",
+  "appName": "todolist",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "./dist",
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon_config_sample",
+      "iconColor": "#488AFF"  
+    },
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
