@@ -42,7 +42,7 @@
 
     <div class="container">
     <div class="fixed-action-btn ">
-      <router-link to='addtodo' class="btn-floating waves-effect waves-light btn-large hoverable blue">
+      <router-link to='addtodo' class="btn-floating  btn-large hoverable blue">
         <i class="large material-icons">add</i>
       </router-link>
     </div>
@@ -55,9 +55,7 @@
       <h4>{{testList[0]}}</h4>
       <p>{{testList[1]}}</p>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close white-text blue btn-flat">Close</a>
-    </div>
+ 
   </div>
   </div>
 </template>
@@ -78,7 +76,7 @@ export default {
   
   created(){
 
-            $(document).ready(function(){
+      $(document).ready(function(){
         $('.modal').modal();
   });
   /*db.collection('todolist').get()
@@ -109,7 +107,6 @@ export default {
     test(x) {
         let list = this.listOfTodos;
         let v  = list.filter(y => y.id == x);
-        console.log(v)
         db.collection('todolist').doc(x).delete()
        .then(() => {
         this.listOfTodos = this.listOfTodos.filter(smoothie => {

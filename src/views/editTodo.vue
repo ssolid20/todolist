@@ -16,7 +16,7 @@
           </div>
           <div class="input-field">
             <i class="material-icons prefix">message</i>
-            <textarea id="message" class="materialize-textarea"  v-model='message'></textarea>
+            <textarea id="message" class="materialize-textarea" data-length="120" v-model='message'></textarea>
             <label for="message">Your Message</label>
           </div>
           <a class="btn hoverable waves-effect waves-light right" v-on:click="edit">
@@ -77,4 +77,5 @@ export default {
   overflow: hidden;
 white-space: nowrap;
 }
+   
 </style>
